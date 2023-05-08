@@ -1,29 +1,17 @@
-from flask import Flask, request, jsonify, render_template, url_for
+from flask import Flask, request, jsonify, render_template
 from chat import get_response
-
 
 app = Flask(__name__)
 
-
-@app.route("/")
+@app.route('/')
 def home():
-    return render_template("index.html")
+    return render_template('index.html')
 
-
-@app.route("/get")
+@app.route('/get_bot_response', methods=['POST'])
 def get_bot_response():
-    user_input = request.args.get('msg')
-    # print(user_input)
-    return str(get_response(user_input))
+    user_input = request.form['text']
+    bot_response = get_response(user_input)
+    return jsonify({'response': bot_response})
 
-
-@app.route("/chatbot_api", methods=['POST'])
-def chatbot_api():
-    data = request.get_json(force=True)
-    print(request.data)
-    message = data['message']
-    return jsonify({'response': get_response(message)})
-
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)

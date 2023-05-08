@@ -1,64 +1,269 @@
 {
-    "intents": [{
-            "tag": "greeting",
-            "patterns": [
-                "Hi",
-                "Hii",
-                "Hey",
-                "How are you",
-                "Is anyone there?",
-                "Hello",
-                "Good day"
-            ],
-            "responses": [
-                "Hey :-)",
-                "Hello!",
-                "Hi there, what can I do for you?",
-                "Hi there, how can I help?"
-            ]
-        },
-        {
-            "tag": "goodbye",
-            "patterns": ["Bye", "See you later", "Goodbye"],
-            "responses": [
-                "See you later, thanks for visiting",
-                "Have a nice day",
-                "Bye! Come back again soon."
-            ]
-        },
-        {
-            "tag": "thanks",
-            "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-            "responses": ["Happy to help!", "Any time!", "My pleasure"]
-        },
-        {
-            "tag": "helpline",
-            "patterns": [
-                "helpline",
-                "help",
-                "important numbers",
-                "numbers",
-                "police",
-                "ambulance",
-                "emergency"
-
-            ],
-            "responses": [
-                "National Emergency number: 112 \nPolice: 100\nFire: 101\nAmbulance: 102\nWomen Helpline: 1091\nDomestic abuse: 181\nMissing Child and Women: 1094\nRailway Accident: 1072\nRoad Accident: 1073\nChildren in Difficult Situation: 1098\nLPG Leak Helpline: 1906\nCyber crime helpline: 155620 "
-            ]
-        },
-        {
-            "tag": "nearest_police_station",
-            "patterns": [
-                "police station",
-                "near police station",
-                "nearest police"
-            ],
-            "responses": [
-                "Nearest Police station is:- "
-            ]
-        }
-
-
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hello",
+        "Good morning",
+        "Good afternoon",
+        "Good evening"
+      ],
+      "responses": [
+        "Hello! How may I assist you today?",
+        "Hi there! How can I help you?",
+        "Hey, what can I do for you?",
+        "Good [morning/afternoon/evening], how may I help you?"
+      ]
+    },
+    {
+      "tag": "products",
+      "patterns": [
+        "What products do you have?",
+        "What do you sell?",
+        "Can you show me your products?",
+        "I want to see what you offer",
+        "What kind of products do you have?",
+        "Can you tell me about your products?"
+      ],
+      "responses": [
+        "We offer a wide variety of products, such as clothing, electronics, home goods, and more. What specifically are you interested in?",
+        "Our product range includes items like clothing, accessories, electronics, home goods, and more. What type of product are you looking for?",
+        "We have a wide range of products to offer, including clothing, electronics, home goods, and more. What can I help you find?"
+      ]
+    },
+    {
+      "tag": "product-details",
+      "patterns": [
+        "Tell me more about [product]",
+        "What are the details of [product]?",
+        "Can you describe [product] to me?",
+        "What is [product] made of?",
+        "What are the features of [product]?",
+        "How big is [product]?",
+        "What colors does [product] come in?",
+        "Is [product] available in other sizes?",
+        "What is the price of [product]?",
+        "Size of product"
+      ],
+      "responses": [
+        "Sure, [product] is made of [materials], it comes in [colors/sizes], and its features include [features]. The price is [price]. Would you like to add it to your cart?",
+        "The details of [product] are as follows: it is made of [materials], comes in [colors/sizes], and its features include [features]. The price is [price]. Is there anything else you would like to know?",
+        "Let me tell you about [product]. It is made of [materials], comes in [colors/sizes], and its features include [features]. The price is [price]. Would you like to add it to your cart?",
+        "The features of [product] include [features], and it is made of [materials]. It comes in [colors/sizes], and the price is [price]. Can I help you with anything else?"
+      ]
+    },
+    {
+      "tag": "cart",
+      "patterns": [
+        "open cart",
+        "cart",
+        "Can you show me my cart?",
+        "What is in my cart?",
+        "What items do I have in my cart?",
+        "What have I added to my cart?",
+        "Show me what I have in my cart",
+        "Can you display my cart?"
+      ],
+      "responses": [
+        "Sure, let me check. You currently have [items] in your cart. Would you like to proceed to checkout?",
+        "Your cart contains [items]. Would you like to complete your purchase now?",
+        "Let me see what's in your cart. You have [items]. Do you want to proceed to checkout?",
+        "You have [items] in your cart. Would you like to review your items?"
+      ]
+      },
+      {
+        "tag": "items",
+        "patterns": [
+          "What items do you have available?",
+          "What products do you sell?",
+          "Can you show me your inventory?",
+          "What is in stock?",
+          "What items are available for purchase?",
+          "What products do you have for sale?"
+        ],
+        "responses": [
+          "We have a wide range of products available, including electronics, clothing, and home goods. What type of product are you looking for?"
+        ]
+      },
+      {
+        "tag": "product_category",
+        "patterns": [
+          "I'm looking for [product_category]",
+          "What do you have in the [product_category] category?",
+          "Do you have any [product_category] products?"
+        ],
+        "responses": [
+          "We have a variety of products in the [product_category] category, including [product_list]. Which one are you interested in?"
+        ]
+      },
+      {
+        "tag": "product_details",
+        "patterns": [
+          "Can you tell me more about [product_name]?",
+          "What are the features of [product_name]?",
+          "What colors does [product_name] come in?",
+          "What sizes does [product_name] come in?"
+        ],
+        "responses": [
+          "Sure! [Product_description] [Product_features]"
+        ]
+      },
+      {
+        "tag": "add_to_cart",
+        "patterns": [
+          "I would like to buy [product_name]",
+          "Add [product_name] to my cart",
+          "How do I add [product_name] to my cart?",
+          "Can I purchase [product_name]?"
+        ],
+        "responses": [
+          "Certainly, [product_name] has been added to your cart. Would you like to continue shopping or proceed to checkout?"
+        ]
+      },
+      {
+        "tag": "remove_from_cart",
+        "patterns": [
+          "Remove [product_name] from my cart",
+          "How do I remove [product_name] from my cart?",
+          "I no longer want [product_name] in my cart"
+        ],
+        "responses": [
+          "Sure, [product_name] has been removed from your cart. Would you like to continue shopping or proceed to checkout?"
+        ]
+      },
+      {
+        "tag": "view_cart",
+        "patterns": [
+          "What is in my cart?",
+          "Can you show me my cart?",
+          "How many items are in my cart?",
+          "View my cart"
+        ],
+        "responses": [
+          "Sure, your cart currently contains [cart_items]."
+        ]
+      },
+      {
+        "tag": "checkout",
+        "patterns": [
+          "How do I checkout?",
+          "I'm ready to checkout",
+          "What is the checkout process?",
+          "How do I complete my purchase?"
+        ],
+        "responses": [
+          "Great, to checkout simply click on the cart icon and follow the prompts to complete your purchase. Let me know if you need any assistance."
+        ]
+      },
+      {
+        "tag": "payments",
+        "patterns": [
+          "Do you take credit cards?",
+          "Do you accept Mastercard?",
+          "Can I pay with Paypal?",
+          "Can i use my credit card?",
+          "Do you accept only credit cards?",
+          "Do you accept only Paypal?",
+          "What modes of payment do you accept?",
+          "What are your modes of payment preferred",
+          "What are your modes of payment?",
+          "How can i pay here?",
+          "What kind of payment should i do?",
+          "do you accept cash?",
+          "Do you accept credit cards?",
+          "Can i pay with my credit card?",
+          "Shall i pay using Paypal?",
+          "Are you cash only?"
+        ],
+        "responses": [
+          "We accept VISA, Mastercard and Paypal",
+          "We accept most major credit cards, and Paypal"
+        ]
+      },
+      {
+        "tag": "account",
+        "patterns": [
+          "How can i create an account?",
+          "Can you help me with my account?",
+          "I forgot my password",
+          "How can I change my password?",
+          "How do I update my billing address?",
+          "Where can I see my order history?",
+          "How do I track my order?",
+          "How can I cancel my order?",
+          "How can I return an item?",
+          "How can I contact customer support?",
+          "What is your return policy?",
+          "How long does it take to receive a refund?",
+          "How can I check the status of my refund?",
+          "How can I delete my account?"
+        ],
+        "responses": [
+          "To create an account, click on 'Create Account' on the top right corner of the page.",
+          "Sure, what can I help you with regarding your account?",
+          "To reset your password, click on 'Forgot Password' and follow the instructions.",
+          "To change your password, go to 'My Account' and click on 'Change Password'.",
+          "To update your billing address, go to 'My Account' and click on 'Update Billing Address'.",
+          "To view your order history, go to 'My Account' and click on 'Order History'.",
+          "To track your order, click on 'Track My Order' on the top right corner of the page and enter your order number.",
+          "To cancel your order, go to 'My Account' and click on 'Cancel Order'.",
+          "To return an item, go to 'My Account' and click on 'Return Item'.",
+          "To contact customer support, click on 'Contact Us' on the bottom of the page.",
+          "Our return policy is that you can return any item within 30 days of purchase as long as it is unused and in its original packaging.",
+          "It usually takes 7-10 business days for the refund to reflect in your account.",
+          "To check the status of your refund, go to 'My Account' and click on 'Refund Status'.",
+          "To delete your account, go to 'My Account' and click on 'Delete Account'."
+        ]
+      },
+      {
+        "tag": "general",
+        "patterns": [
+          "What is this website all about?",
+          "What is the purpose of this website?",
+          "Can you tell me about your company?",
+          "What kind of products do you sell?",
+          "What is your return policy?",
+          "What is your shipping policy?",
+          "What is your privacy policy?",
+          "How do I contact customer support?",
+          "How can I track my order?",
+          "What is the status of my order?",
+          "Can you tell me about any ongoing promotions?",
+          "Do you offer any discounts or coupons?",
+          "What is your loyalty program?",
+          "How do I sign up for your newsletter?",
+          "Can you provide any gift wrapping services?",
+          "Do you have a physical store location?",
+          "Can I pick up my order in-store?",
+          "What are your business hours?",
+          "Do you offer international shipping?"
+        ],
+        "responses": [
+          "Our website sells a variety of products at competitive prices.",
+          "Our company is dedicated to providing high-quality products and excellent customer service.",
+          "Our return policy allows for a full refund within 30 days of purchase.",
+          "Our shipping policy includes free standard shipping on orders over $50.",
+          "Our privacy policy ensures that your personal information is protected and never shared with third parties.",
+          "Our customer support team can be contacted via email or phone.",
+          "To track your order, please log in to your account and view the order status.",
+          "Your order is currently processing and will be shipped within the next 24 hours.",
+          "We are currently offering a 10% discount on all purchases using the code DISCOUNT10.",
+          "Our loyalty program offers exclusive discounts and rewards for repeat customers.",
+          "To sign up for our newsletter, please enter your email address in the form on our homepage.",
+          "We do offer gift wrapping services for an additional fee.",
+          "Our physical store location is located at 123 Main Street in downtown.",
+          "In-store pickup is available for all online orders.",
+          "Our business hours are Monday through Friday from 9am to 6pm.",
+          "We offer international shipping to select countries. Please check our website for more details."
+        ]
+      }
+      
+      
+      
+      
+      
     ]
-}
+  }
+  
