@@ -14,7 +14,7 @@
         "Hello! How may I assist you today?",
         "Hi there! How can I help you?",
         "Hey, what can I do for you?",
-        "Good [morning/afternoon/evening], how may I help you?"
+        "Good day!, how may I help you?"
       ]
     },
     {
@@ -36,22 +36,22 @@
     {
       "tag": "product-details",
       "patterns": [
-        "Tell me more about [product]",
-        "What are the details of [product]?",
-        "Can you describe [product] to me?",
-        "What is [product] made of?",
-        "What are the features of [product]?",
-        "How big is [product]?",
-        "What colors does [product] come in?",
-        "Is [product] available in other sizes?",
-        "What is the price of [product]?",
+        "Tell me more about product",
+        "What are the details of product?",
+        "Can you describe product to me?",
+        "What is product made of?",
+        "What are the features of product?",
+        "How big is product?",
+        "What colors does product come in?",
+        "Is product available in other sizes?",
+        "What is the price of product?",
         "Size of product"
       ],
       "responses": [
-        "Sure, [product] is made of [materials], it comes in [colors/sizes], and its features include [features]. The price is [price]. Would you like to add it to your cart?",
-        "The details of [product] are as follows: it is made of [materials], comes in [colors/sizes], and its features include [features]. The price is [price]. Is there anything else you would like to know?",
-        "Let me tell you about [product]. It is made of [materials], comes in [colors/sizes], and its features include [features]. The price is [price]. Would you like to add it to your cart?",
-        "The features of [product] include [features], and it is made of [materials]. It comes in [colors/sizes], and the price is [price]. Can I help you with anything else?"
+        "Sure, product is made of [materials], it comes in [colors/sizes], and its features include [features]. The price is [price]. Would you like to add it to your cart?",
+        "The details of product are as follows: it is made of [materials], comes in [colors/sizes], and its features include [features]. The price is [price]. Is there anything else you would like to know?",
+        "Let me tell you about product. It is made of [materials], comes in [colors/sizes], and its features include [features]. The price is [price]. Would you like to add it to your cart?",
+        "The features of product include [features], and it is made of [materials]. It comes in [colors/sizes], and the price is [price]. Can I help you with anything else?"
       ]
     },
     {
@@ -72,122 +72,157 @@
         "Let me see what's in your cart. You have [items]. Do you want to proceed to checkout?",
         "You have [items] in your cart. Would you like to review your items?"
       ]
-      },
-      {
-        "tag": "items",
-        "patterns": [
-          "What items do you have available?",
-          "What products do you sell?",
-          "Can you show me your inventory?",
-          "What is in stock?",
-          "What items are available for purchase?",
-          "What products do you have for sale?"
-        ],
-        "responses": [
-          "We have a wide range of products available, including electronics, clothing, and home goods. What type of product are you looking for?"
-        ]
-      },
-      {
-        "tag": "product_category",
-        "patterns": [
-          "I'm looking for [product_category]",
-          "What do you have in the [product_category] category?",
-          "Do you have any [product_category] products?"
-        ],
-        "responses": [
-          "We have a variety of products in the [product_category] category, including [product_list]. Which one are you interested in?"
-        ]
-      },
-      {
-        "tag": "product_details",
-        "patterns": [
-          "Can you tell me more about [product_name]?",
-          "What are the features of [product_name]?",
-          "What colors does [product_name] come in?",
-          "What sizes does [product_name] come in?"
-        ],
-        "responses": [
-          "Sure! [Product_description] [Product_features]"
-        ]
-      },
-      {
-        "tag": "add_to_cart",
-        "patterns": [
-          "I would like to buy [product_name]",
-          "Add [product_name] to my cart",
-          "How do I add [product_name] to my cart?",
-          "Can I purchase [product_name]?"
-        ],
-        "responses": [
-          "Certainly, [product_name] has been added to your cart. Would you like to continue shopping or proceed to checkout?"
-        ]
-      },
-      {
-        "tag": "remove_from_cart",
-        "patterns": [
-          "Remove [product_name] from my cart",
-          "How do I remove [product_name] from my cart?",
-          "I no longer want [product_name] in my cart"
-        ],
-        "responses": [
-          "Sure, [product_name] has been removed from your cart. Would you like to continue shopping or proceed to checkout?"
-        ]
-      },
-      {
-        "tag": "view_cart",
-        "patterns": [
-          "What is in my cart?",
-          "Can you show me my cart?",
-          "How many items are in my cart?",
-          "View my cart"
-        ],
-        "responses": [
-          "Sure, your cart currently contains [cart_items]."
-        ]
-      },
-      {
-        "tag": "checkout",
-        "patterns": [
-          "How do I checkout?",
-          "I'm ready to checkout",
-          "What is the checkout process?",
-          "How do I complete my purchase?"
-        ],
-        "responses": [
-          "Great, to checkout simply click on the cart icon and follow the prompts to complete your purchase. Let me know if you need any assistance."
-        ]
-      },
-      {
-        "tag": "payments",
-        "patterns": [
-          "Do you take credit cards?",
-          "Do you accept Mastercard?",
-          "Can I pay with Paypal?",
-          "Can i use my credit card?",
-          "Do you accept only credit cards?",
-          "Do you accept only Paypal?",
-          "What modes of payment do you accept?",
-          "What are your modes of payment preferred",
-          "What are your modes of payment?",
-          "How can i pay here?",
-          "What kind of payment should i do?",
-          "do you accept cash?",
-          "Do you accept credit cards?",
-          "Can i pay with my credit card?",
-          "Shall i pay using Paypal?",
-          "Are you cash only?"
-        ],
-        "responses": [
-          "We accept VISA, Mastercard and Paypal",
-          "We accept most major credit cards, and Paypal"
-        ]
-      }
-      
-      
-      
-      
-      
-      
-    ]
-  }
-  
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "What items do you have available?",
+        "What products do you sell?",
+        "Can you show me your inventory?",
+        "What is in stock?",
+        "What items are available for purchase?",
+        "What products do you have for sale?"
+      ],
+      "responses": [
+        "We have a wide range of products available, including electronics, clothing, and home goods. What type of product are you looking for?"
+      ]
+    },
+    {
+      "tag": "product_category",
+      "patterns": [
+        "I'm looking for [product_category]",
+        "What do you have in the [product_category] category?",
+        "Do you have any [product_category] products?"
+      ],
+      "responses": [
+        "We have a variety of products in the [product_category] category, including [product_list]. Which one are you interested in?"
+      ]
+    },
+    {
+      "tag": "product_details",
+      "patterns": [
+        "Is this product available",
+        "price of product",
+        "which is the best selling category",
+        "which is your best selling product",
+        "Can you tell me more about [product_name]?",
+        "What are the features of [product_name]?",
+        "What colors does [product_name] come in?",
+        "What sizes does [product_name] come in?"
+      ],
+      "responses": [
+        "Sure! [Product_description] [Product_features] [Product Price]"
+      ]
+    },
+    {
+      "tag": "add_to_cart",
+      "patterns": [
+        "add to cart",
+        "I would like to buy [product_name]",
+        "Add [product_name] to my cart",
+        "How do I add [product_name] to my cart?",
+        "Can I purchase [product_name]?"
+      ],
+      "responses": [
+        "Certainly, [product_name] has been added to your cart. Would you like to continue shopping or proceed to checkout?"
+      ]
+    },
+    {
+      "tag": "remove_from_cart",
+      "patterns": [
+        "Remove from cart",
+        "Remove [product_name] from my cart",
+        "How do I remove [product_name] from my cart?",
+        "I no longer want [product_name] in my cart"
+      ],
+      "responses": [
+        "Sure, [product_name] has been removed from your cart. Would you like to continue shopping or proceed to checkout?"
+      ]
+    },
+    {
+      "tag": "view_cart",
+      "patterns": [
+        "view cart",
+        "What is in my cart?",
+        "Can you show me my cart?",
+        "How many items are in my cart?",
+        "View my cart"
+      ],
+      "responses": [
+        "Sure, your cart currently contains [cart_items]."
+      ]
+    },
+    {
+      "tag": "checkout",
+      "patterns": [
+        "How do I checkout?",
+        "I'm ready to checkout",
+        "What is the checkout process?",
+        "How do I complete my purchase?"
+      ],
+      "responses": [
+        "Great, to checkout simply click on the cart icon and follow the prompts to complete your purchase. Let me know if you need any assistance."
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Can i use my credit card?",
+        "Do you accept only credit cards?",
+        "Do you accept only Paypal?",
+        "What modes of payment do you accept?",
+        "What are your modes of payment preferred",
+        "What are your modes of payment?",
+        "How can i pay here?",
+        "What kind of payment should i do?",
+        "do you accept cash?",
+        "Do you accept credit cards?",
+        "Can i pay with my credit card?",
+        "Shall i pay using Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "login",
+      "patterns": [
+        "login issue",
+        "login problem",
+        "login help",
+        "forgot password",
+        "password change"
+      ],
+      "responses": [
+        "kindly provide us your email for further process! "
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "help",
+        "request a callback",
+        "mistake"
+      ],
+      "responses": [
+        "Please provide us you contact details we will reach out ASAP!"
+      ]
+    },
+    {
+      "tag": "developers",
+      "patterns": [
+        "Who are your developers",
+        "Who are your Founders",
+        "Developer"
+      ],
+      "responses": [
+        "My Developers are Kshitiz Raj, Shivam Singh Rathore and Ankit Chaturvedi."
+      ]
+    }
+  ]
+}
