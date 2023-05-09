@@ -181,84 +181,8 @@
           "We accept VISA, Mastercard and Paypal",
           "We accept most major credit cards, and Paypal"
         ]
-      },
-      {
-        "tag": "account",
-        "patterns": [
-          "How can i create an account?",
-          "Can you help me with my account?",
-          "I forgot my password",
-          "How can I change my password?",
-          "How do I update my billing address?",
-          "Where can I see my order history?",
-          "How do I track my order?",
-          "How can I cancel my order?",
-          "How can I return an item?",
-          "How can I contact customer support?",
-          "What is your return policy?",
-          "How long does it take to receive a refund?",
-          "How can I check the status of my refund?",
-          "How can I delete my account?"
-        ],
-        "responses": [
-          "To create an account, click on 'Create Account' on the top right corner of the page.",
-          "Sure, what can I help you with regarding your account?",
-          "To reset your password, click on 'Forgot Password' and follow the instructions.",
-          "To change your password, go to 'My Account' and click on 'Change Password'.",
-          "To update your billing address, go to 'My Account' and click on 'Update Billing Address'.",
-          "To view your order history, go to 'My Account' and click on 'Order History'.",
-          "To track your order, click on 'Track My Order' on the top right corner of the page and enter your order number.",
-          "To cancel your order, go to 'My Account' and click on 'Cancel Order'.",
-          "To return an item, go to 'My Account' and click on 'Return Item'.",
-          "To contact customer support, click on 'Contact Us' on the bottom of the page.",
-          "Our return policy is that you can return any item within 30 days of purchase as long as it is unused and in its original packaging.",
-          "It usually takes 7-10 business days for the refund to reflect in your account.",
-          "To check the status of your refund, go to 'My Account' and click on 'Refund Status'.",
-          "To delete your account, go to 'My Account' and click on 'Delete Account'."
-        ]
-      },
-      {
-        "tag": "general",
-        "patterns": [
-          "What is this website all about?",
-          "What is the purpose of this website?",
-          "Can you tell me about your company?",
-          "What kind of products do you sell?",
-          "What is your return policy?",
-          "What is your shipping policy?",
-          "What is your privacy policy?",
-          "How do I contact customer support?",
-          "How can I track my order?",
-          "What is the status of my order?",
-          "Can you tell me about any ongoing promotions?",
-          "Do you offer any discounts or coupons?",
-          "What is your loyalty program?",
-          "How do I sign up for your newsletter?",
-          "Can you provide any gift wrapping services?",
-          "Do you have a physical store location?",
-          "Can I pick up my order in-store?",
-          "What are your business hours?",
-          "Do you offer international shipping?"
-        ],
-        "responses": [
-          "Our website sells a variety of products at competitive prices.",
-          "Our company is dedicated to providing high-quality products and excellent customer service.",
-          "Our return policy allows for a full refund within 30 days of purchase.",
-          "Our shipping policy includes free standard shipping on orders over $50.",
-          "Our privacy policy ensures that your personal information is protected and never shared with third parties.",
-          "Our customer support team can be contacted via email or phone.",
-          "To track your order, please log in to your account and view the order status.",
-          "Your order is currently processing and will be shipped within the next 24 hours.",
-          "We are currently offering a 10% discount on all purchases using the code DISCOUNT10.",
-          "Our loyalty program offers exclusive discounts and rewards for repeat customers.",
-          "To sign up for our newsletter, please enter your email address in the form on our homepage.",
-          "We do offer gift wrapping services for an additional fee.",
-          "Our physical store location is located at 123 Main Street in downtown.",
-          "In-store pickup is available for all online orders.",
-          "Our business hours are Monday through Friday from 9am to 6pm.",
-          "We offer international shipping to select countries. Please check our website for more details."
-        ]
       }
+      
       
       
       
